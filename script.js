@@ -3,13 +3,13 @@ function OnLoad()
     
     document.getElementById("close").addEventListener('click', (event) => {document.getElementById("popup").style.display = "none";});
     
-    $(document).keydown(function(e)
-    {
-        if (e.key === "Escape")
-        {
-            document.getElementById("popup").style.display = "none";    //closes the popup
-        }
-    });
+    //$(document).keydown(function(e)
+    //{
+    //    if (e.key === "Escape")
+    //    {
+    //        document.getElementById("popup").style.display = "none";    //closes the popup
+    //    }
+    //});
         
     LoadMore();
 
@@ -127,6 +127,7 @@ window.onclick = function(event)
 function GetRandomAdImageSrc()
     {
         return;
+
         var Url =
             [
                 '336x280-1.gif',
