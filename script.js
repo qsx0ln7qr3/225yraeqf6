@@ -187,8 +187,10 @@ window.onresize = function()
 
 $(window).scroll(function()
 {
-    if($(window).scrollTop() + $(window).height() > ($(document).height() - 20))
+    if($(window).scrollTop() + $(window).height() > ($(document).height() - 300))
     {
+        LoadFullRow();
+        LoadFullRow();
         LoadFullRow();
     }
 });
@@ -198,6 +200,8 @@ function FillContainer()
     {
         while (document.getElementById("container").clientHeight < window.innerHeight)
         {
+            LoadFullRow();
+            LoadFullRow();
             LoadFullRow();
         }
     }
