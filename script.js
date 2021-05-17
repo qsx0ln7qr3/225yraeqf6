@@ -20,9 +20,9 @@ function LoadMore()
 {
     var count = document.getElementById("container").childElementCount;
 
-    var items_between_ads_count = 17;
+    var items_between_ads_count = 50;
     
-    if (count % items_between_ads_count == 0)
+    if (count % (items_between_ads_count+1) == items_between_ads_count)
         {
             LoadAd();
         }
